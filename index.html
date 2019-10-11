@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Garrett Fisher Design</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/2e4dacabf8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+        <header id="navbar">
+
+            <a href="#" class="logo">
+                <img src="/images/Small_Logo.svg" alt="Garrett Fisher Logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">portfolio</a></li>
+                    <li><a href="#">contact</a></li>
+            </ul>
+            </nav>
+
+        </header>
+
+        <div class="wrapper">
+            <section class="hero">
+                <div class="inner">
+                    <div class="anim-panel">
+                        <h3>creativity . realised</h3>
+                    </div>
+
+                    <div class="clipper">
+                        <h1>garrett fisher</h1>
+                    </div>
+
+                    <div class="anim-panel">
+                        <h2>designs</h2>
+                    </div>
+
+                    <div class="anim-panel"> <a href="#" class="primary">
+                        <img src="/images/Large_Logo.svg" alt="Garrett Fisher Logo">
+                    </a>
+
+                    <h4>Learn More</h4>
+                    <a href="#about">  <!-- Link to your content ID -->
+                    <div id="arrow-down">
+                            <i class="fas fa-chevron-down"></i>
+                    </div>
+                    </a>
+                        
+                    </div>
+                </div>   
+            </section>
+            <section id="about" class="about">
+
+                <h1>stuff header</h1>
+
+            </section>
+            <section class="portfolio">
+
+            </section>
+            <section class="contact">
+
+            </section>
+        </div>
+<script>
+       var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+          var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+          } else {
+            document.getElementById("navbar").style.top = "-70px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+</script>
+ 
+
+</body>
+</html>
