@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap');
+@import "../fonts/font-awesome/scss/fontawesome.scss";
+@import "../fonts/font-awesome/scss/regular.scss";
+@import "../fonts/font-awesome/scss/brands.scss";
+@import "../fonts/font-awesome/scss/solid.scss";
+
+.fa {
+    display: inline-block;
+    font: normal normal normal .875rem/1 FontAwesome;
+    font-size: inherit;
+    text-rendering:auto;
+
+}
+
+body, html {
+    margin: 0;
+}
+
+body {
+    height: 100%;
+    font-family: 'Montserrat';
+    //display: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    padding: .5em;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    width: calc(100% - 1em);
+    background: #C7C7C7;
+    box-shadow: 1px 1px 7px black;
+    transition: top 0.3s;
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    a.logo {
+        font-weight: bold;
+        text-transform: uppercase;
+
+        img {
+            height: 40px;
+            padding: 0;
+        }
+    }
+
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        width: calc(100% - 4em);
+        margin: 1em;
+        padding: 0;
+        font-size: .65rem;
+        font-weight: 500;
+
+        li a {
+            padding: .5em;
+        }
+    }
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: auto;
+
+    section {
+        padding: 1em;
+
+        h1, h2 {
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+        }
+
+        .primary {
+            padding: 0;
+            display: flex;
+            justify-content: center;
+
+            margin-top: 1em;
+            margin-left: 0;
+        }
+
+          .arrow{
+              position: absolute;
+              top: 80%;
+              left: 50%;
+              transform: translate(-50%,-50%);
+          }
+                    // Animation
+            @keyframes jump {
+                0% { top: 0; } 50% { top: 50px; } 100% { top: 0; }
+            }
+            
+            // Button/Arrow
+            #arrow-down {
+                position: relative;
+                margin: 0 auto;
+                text-align: center;
+                animation: jump 5s infinite;
+                color: #1BD3F1;
+                i {
+                    content: '\f0a8';
+                    font-family: 'FontAwesome';
+                    font-size: 80px;
+                    transition: .3s ease-in-out;
+                }
+                i:hover {
+                    opacity: 0.7;
+                    transition: .3s ease-in-out;
+                }
+            }
+            
+
+        .clipper {
+            overflow: hidden;
+        }
+
+
+    }
+
+    section.hero {
+        padding-top: 8em;
+        background: url('../images/Me_Background.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 79vh;
+        position: relative;
+        
+
+
+        h3 {
+            margin: auto;
+            margin-top: -4em;
+            margin-bottom: .1em;
+            text-align: center;
+            color: #B5B5B5;
+            font-weight: 200;
+            font-size: .6rem;
+            letter-spacing: 5px;
+        }
+
+        h1 {
+            margin: auto;
+            text-align: center;
+            color: white;
+            font-size: 2.1rem;
+            letter-spacing: 10px;
+            font-weight: 700;
+        }
+
+        h2 {
+            margin: auto;
+            color: #1BD3F1;
+            text-align: center;
+            letter-spacing: 12px;
+            font-weight: 600;
+            font-size: .9rem;
+
+        }
+
+        h4 {
+            margin: auto;
+            color: #B5B5B5;
+            text-align: center;
+            font-weight: 400;
+            font-size: .8rem;
+            letter-spacing: 3px;
+            margin-top: 5em;
+        }
+
+        img {
+            height: 100px;
+        }
+
+
+    }
+}
