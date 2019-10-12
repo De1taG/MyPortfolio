@@ -5878,6 +5878,13 @@ header a {
   color: black;
 }
 
+header a:hover {
+  color: #1BD3F1;
+  font-weight: bold;
+  background-color: rgba(29, 29, 29, 0.9);
+  border-radius: .5em;
+}
+
 header a.logo {
   font-weight: bold;
   text-transform: uppercase;

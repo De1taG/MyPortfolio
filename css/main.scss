@@ -36,6 +36,13 @@ header {
         color: black;
     }
 
+    a:hover {
+        color: #1BD3F1;
+        font-weight: bold;
+        background-color: rgba(29, 29, 29, 0.9);
+        border-radius: .5em;
+    }
+
     a.logo {
         font-weight: bold;
         text-transform: uppercase;
@@ -60,6 +67,7 @@ header {
             padding: .5em;
         }
     }
+
 }
 
 .wrapper {
