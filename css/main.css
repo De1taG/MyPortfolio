@@ -5860,9 +5860,9 @@ body {
 }
 
 header {
-  position: fixed;
+  position: absolute;
   top: 0;
-  padding: .5em;
+  padding: .1em;
   z-index: 20;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5871,11 +5871,6 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   width: calc(100% - 1em);
-  background: #C7C7C7;
-  -webkit-box-shadow: 1px 1px 7px black;
-          box-shadow: 1px 1px 7px black;
-  -webkit-transition: top 0.3s;
-  transition: top 0.3s;
 }
 
 header a {
@@ -5917,6 +5912,7 @@ header nav ul li a {
   display: grid;
   -ms-grid-columns: auto;
       grid-template-columns: auto;
+  padding-top: 3em;
 }
 
 .wrapper section {
@@ -6005,10 +6001,12 @@ header nav ul li a {
 }
 
 .wrapper section.hero {
-  padding-top: 8em;
-  background: url("../images/Me_Background.png");
+  padding-top: 6em;
+  background: url("../images/BG.svg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position-x: -20em;
+  background-position-y: -1.5em;
   height: 79vh;
   position: relative;
 }
@@ -6042,9 +6040,9 @@ header nav ul li a {
 }
 
 .wrapper section.hero h4 {
-  color: #161616;
+  color: #d4d4d4;
   margin: auto;
-  margin-top: 6em;
+  margin-top: 5em;
   text-align: center;
   font-weight: 500;
   font-size: 1rem;

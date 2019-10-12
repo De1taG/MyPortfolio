@@ -23,16 +23,13 @@ body {
 }
 
 header {
-    position: fixed;
+    position: absolute;
     top: 0;
-    padding: .5em;
+    padding: .1em;
     z-index: 20;
     display: flex;
     justify-content: center;
     width: calc(100% - 1em);
-    background: #C7C7C7;
-    box-shadow: 1px 1px 7px black;
-    transition: top 0.3s;
 
     a {
         text-decoration: none;
@@ -68,6 +65,7 @@ header {
 .wrapper {
     display: grid;
     grid-template-columns: auto;
+    padding-top: 3em;
 
     section {
         padding: 1em;
@@ -130,10 +128,12 @@ header {
     }
 
     section.hero {
-        padding-top: 8em;
-        background: url('../images/Me_Background.png');
+        padding-top: 6em;
+        background: url('../images/BG.svg');
         background-size: cover;
         background-repeat: no-repeat;
+        background-position-x: -20em;
+        background-position-y: -1.5em;
         height: 79vh;
         position: relative;
         
@@ -169,9 +169,9 @@ header {
         }
 
         h4 {
-            color: rgb(22, 22, 22);
+            color: rgb(212, 212, 212);
             margin: auto;
-            margin-top: 6em;
+            margin-top: 5em;
             text-align: center;
             font-weight: 500;
             font-size: 1rem;
