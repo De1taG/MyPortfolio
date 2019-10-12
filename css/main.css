@@ -5983,6 +5983,7 @@ header nav ul li a {
   -webkit-animation: jump 5s infinite;
           animation: jump 5s infinite;
   color: #1BD3F1;
+  padding: 2em 0;
 }
 
 .wrapper section #arrow-down i {
@@ -6041,13 +6042,13 @@ header nav ul li a {
 }
 
 .wrapper section.hero h4 {
+  color: #161616;
   margin: auto;
-  color: #B5B5B5;
+  margin-top: 6em;
   text-align: center;
-  font-weight: 400;
-  font-size: .8rem;
-  letter-spacing: 3px;
-  margin-top: 5em;
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 4px;
 }
 
 .wrapper section.hero img {
