@@ -6002,7 +6002,7 @@ header nav ul li a {
 
 .wrapper section.hero {
   padding-top: 6em;
-  background: url("/MyPortfolio/images/BG.svg");
+  background: url("../images/BG.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: -20em;
@@ -6042,7 +6042,7 @@ header nav ul li a {
 .wrapper section.hero h4 {
   color: #d4d4d4;
   margin: auto;
-  margin-top: 5em;
+  margin-top: 3em;
   text-align: center;
   font-weight: 500;
   font-size: 1rem;
