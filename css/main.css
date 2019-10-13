@@ -5859,6 +5859,11 @@ body {
   font-family: 'Montserrat';
 }
 
+body a {
+  text-decoration: none;
+  color: black;
+}
+
 header {
   position: absolute;
   top: 0;
@@ -5873,26 +5878,11 @@ header {
   width: calc(100% - 1em);
 }
 
-header a {
-  text-decoration: none;
-  color: black;
-}
-
 header a:hover {
   color: #1BD3F1;
   font-weight: bold;
   background-color: rgba(29, 29, 29, 0.9);
   border-radius: .5em;
-}
-
-header a.logo {
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-header a.logo img {
-  height: 40px;
-  padding: 0;
 }
 
 header nav ul {
@@ -6058,5 +6048,130 @@ header nav ul li a {
 
 .wrapper section.hero img {
   height: 100px;
+}
+
+.wrapper section.about .about-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 1em;
+}
+
+.wrapper section.about .about-header h1 {
+  text-transform: lowercase;
+  letter-spacing: 10px;
+}
+
+.wrapper section.about .about-header h1 strong {
+  color: #1BD3F1;
+}
+
+.wrapper section.about .about-header #resume-icon {
+  font-size: 30px;
+  color: black;
+}
+
+.wrapper section.about .about-header i:hover {
+  color: #1BD3F1;
+}
+
+.wrapper section.about .profile-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  height: 17%;
+}
+
+.wrapper section.about .about-content {
+  text-align: center;
+  color: white;
+}
+
+.wrapper section.about .about-content h3 {
+  text-align: left;
+  margin-left: 1em;
+}
+
+.wrapper section.about .about-content p {
+  text-align: left;
+  margin-left: 1em;
+}
+
+.wrapper section.about .about-content .greeting {
+  padding: 0 1em 1em 1em;
+}
+
+.wrapper section.about .about-content .greeting h2 {
+  text-transform: initial;
+  font-weight: 400;
+  background-image: -webkit-gradient(linear, left top, right top, from(#1BF1F1), to(#260E79));
+  background-image: linear-gradient(to right, #1BF1F1, #260E79);
+  -webkit-box-shadow: 3px 3px 6px #7E99DC;
+          box-shadow: 3px 3px 6px #7E99DC;
+  border-radius: 12px;
+  padding: .3em;
+}
+
+.wrapper section.about .about-content .about-containers {
+  padding: 1em;
+}
+
+.wrapper section.about .about-content .about-containers .student-container {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#D9009F), to(#F1832E));
+  background-image: linear-gradient(to bottom right, #D9009F, #F1832E);
+  -webkit-box-shadow: 3px 3px 6px #C273AD;
+          box-shadow: 3px 3px 6px #C273AD;
+  border-radius: 12px;
+  padding: .3em;
+  margin-bottom: 2em;
+}
+
+.wrapper section.about .about-content .about-containers .student-container strong {
+  color: #E6FF00;
+}
+
+.wrapper section.about .about-content .about-containers .creator-container {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#1BF1F1), to(#260E79));
+  background-image: linear-gradient(to bottom right, #1BF1F1, #260E79);
+  -webkit-box-shadow: 3px 3px 6px #7E99DC;
+          box-shadow: 3px 3px 6px #7E99DC;
+  border-radius: 12px;
+  padding: .3em;
+  margin-bottom: 2em;
+}
+
+.wrapper section.about .about-content .about-containers .creator-container strong {
+  color: #00FF11;
+}
+
+.wrapper section.about .about-content .about-containers .broadcaster-container {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#D9009F), to(#F1832E));
+  background-image: linear-gradient(to bottom right, #D9009F, #F1832E);
+  -webkit-box-shadow: 3px 3px 6px #C273AD;
+          box-shadow: 3px 3px 6px #C273AD;
+  border-radius: 12px;
+  padding: .3em;
+  margin-bottom: 2em;
+}
+
+.wrapper section.about .about-content .about-containers .broadcaster-container strong {
+  color: #E6FF00;
+}
+
+.wrapper section.about .social {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.wrapper section.about .social .social-icons i {
+  padding: 0 .5em;
+}
+
+.wrapper section.about .social .social-icons i:hover {
+  color: #1BD3F1;
 }
 /*# sourceMappingURL=main.css.map */
